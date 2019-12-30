@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/aim-portfolio/static/css/main.d1b05096.chunk.css",
+    "main.js": "/aim-portfolio/static/js/main.2f74ee3c.chunk.js",
+    "main.js.map": "/aim-portfolio/static/js/main.2f74ee3c.chunk.js.map",
+    "runtime-main.js": "/aim-portfolio/static/js/runtime-main.6fa37092.js",
+    "runtime-main.js.map": "/aim-portfolio/static/js/runtime-main.6fa37092.js.map",
+    "static/js/2.c85f9b24.chunk.js": "/aim-portfolio/static/js/2.c85f9b24.chunk.js",
+    "static/js/2.c85f9b24.chunk.js.map": "/aim-portfolio/static/js/2.c85f9b24.chunk.js.map",
+    "index.html": "/aim-portfolio/index.html",
+    "precache-manifest.c572674cf26026994ce4df0061056165.js": "/aim-portfolio/precache-manifest.c572674cf26026994ce4df0061056165.js",
+    "service-worker.js": "/aim-portfolio/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/aim-portfolio/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.c85f9b24.chunk.js.LICENSE": "/aim-portfolio/static/js/2.c85f9b24.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6fa37092.js",
+    "static/js/2.c85f9b24.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.2f74ee3c.chunk.js"
+  ]
+}
