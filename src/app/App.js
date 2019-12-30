@@ -36,7 +36,6 @@ const styles = {
        theme: value
      }))
    }
-
    render(){
      return (
        <div className={this.state.theme==="dark"? this.props.classes.dark : this.props.classes.light } >
@@ -46,7 +45,6 @@ const styles = {
           checked={this.state.theme === "light"}
           onChange = {()=>this.handleThemeChange( this.state.theme==="dark"? "light": "dark" )}
          />
-
        </div>
      );
    }
