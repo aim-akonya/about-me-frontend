@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   working_directory: ~/aim-portfolio
   docker:
-    - image: circlci/node:13.3.0
+    - image: circleci/node:13.3.0
 
   steps:
     - checkout
