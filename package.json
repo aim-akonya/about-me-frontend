@@ -1,5 +1,5 @@
 {
-  "homepage":"https://aim-akonya.github.io/aim-portfolio",
+  "homepage": "https://aim-akonya.github.io/aim-portfolio",
   "name": "aim-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "eslint src/**/*.js  --max-warnings 5"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,7 +38,13 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "@upstatement/eslint-config": "^0.4.3",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "gh-pages": "^2.1.1",
+    "prettier": "^1.19.1"
   }
-
 }
