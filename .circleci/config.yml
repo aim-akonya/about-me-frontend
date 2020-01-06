@@ -7,4 +7,16 @@ jobs:
       - image: circleci/node:13.3.0
     steps:
       - checkout
-      - run: echo "yml file redone"
+      - restore_cache:
+        keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+
+      - run: npm install
+
+      - save_cache:
+        paths:
+          - node_modules
+        key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run: npm test
