@@ -20,8 +20,16 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "lint": "eslint src/**/*.js  --max-warnings 5"
+    "lint": "eslint src/**/*.js  --max-warnings 5",
+    "size": "npm run build && size-limit"
   },
+
+  "size-limit":[
+    {
+      "path": "build/static/**/*.{js,css,svg,woff,woff2,png,ttf,html}"
+    }
+  ],
+
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -38,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@size-limit/preset-app": "^2.2.4",
     "@upstatement/eslint-config": "^0.4.3",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
