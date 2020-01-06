@@ -5,6 +5,12 @@ jobs:
     working_directory: ~/aim-portfolio
     docker:
       - image: circleci/node:13.3.0
+
     steps:
       - checkout
+      - restore_cache:
+        keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+            
       - run: npm install
