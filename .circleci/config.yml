@@ -1,21 +1,10 @@
 version: 2.1
 
 jobs:
-  working_directory: ~/aim-portfolio
-  docker:
-    - image: circleci/node:13.3.0
-
-  steps:
-    - checkout
-    - restore_cache:
-        key: dependency-cache-{{ checksum "package-lock.json" }}
-    - run:
-        name: install-npm-wee
-        command: 'npm install'
-    - save_cache:
-        key: dependency-cache-{{ checksum "package-lock.json" }}
-        paths:
-          - ./node_modules
-    - run:
-        name: test
-        command: npm test
+  build:
+    working_directory: ~/aim-portfolio
+    docker:
+      - image: circleci/node:13.3.0
+    steps:
+      - checkout
+      -run: echo "sample begin"
