@@ -10,7 +10,6 @@ jobs:
       - checkout
       - restore_cache:
         keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
-            
+          - v1-npm-deps{{ checksum "package.json" }}
+          - v1-npm-deps-
       - run: npm install
